@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <!-- This is a very minimal header -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Letter to Leslie Gunston</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>TEI@Oxford exercise file</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>http://www.oucs.ox.ac.uk/ww1lit/collections/document/5243/4769</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text type="letter">
+    <body>
+      <!-- pb marks the breaks of pages -->
+      <pb n="1"/>
+
+      <!-- This letter has three divisions: two prose, and a bit of verse  -->
+      <div type="prose">
+
+        <!-- Here dateline is used to record the date and place -->
+
+        <dateline rend="right">
+          <placeName>Craiglockhart</placeName>. <lb/>
+          <date when="1917-07">July 1917.<lb/> Wednesday</date>
+        </dateline>
+
+        <!-- A salute records the salutation  -->
+        <salute>Dear L.</salute>
+
+        <!-- The encoder has marked line breaks in the paragraphs, and some other structures -->
+        <p>Thanks for yours of this morning. I hope <lb/>you have had my card posted last Monday.
+          <lb/>On Mond. next I lecture the Field Club - <lb/>a Nat. Hist. Association, in the lines
+          of our <lb/>old Society - Geological, (you + me) + Botanical <lb/>(New) Do you remember:
+          you old <lb/>Black Molt? Well, the days have <lb/>come when I am one of the founders of a
+          real <lb/> learned society. My <foreign xml:lang="fr">oubject</foreign> has <lb/>the
+          rather journalese Title of "Do Plants <lb/>Think?" - a study of the Response to
+          <lb/>Stimuli + Devices for Fertilisation, <lb/>etc. I have no books yet, but I
+          <lb/>remember a number of useful points <lb/>from your big Cassets' (I think it was
+          <lb/>Cassets') studied a <date when="1911">1911</date>. Meanwhile <pb n="2"/>
+          <lb/>I'm beastly bothered with our Mag. <lb/>(herewith) <emph rend="ul">and</emph> I'm
+            <sic>take</sic> German <lb/>Lessons at the Berlitz, Edin. </p>
+        <p>Last week I wrote (to order) a strong <lb/>bit of Blank: on <hi rend="ul">Antaeus v.
+            Heracles</hi>. <lb/>These are the best lines, methinks: <lb/>(N.B. Antaeus deriving
+          strength from his Mother Earth <lb/>nearly licked old Herk.) </p>
+      </div>
+      <!-- This division contains a partial draft of Owen's poem 'The Wrestlers'. -->
+      <div type="verse" rend="hl">
+        <lg>
+          <l>... How Earth herself empowered him with her trick,</l>
+          <l>Gave him the grip and stringency of Winter,</l>
+          <l>And all the ardour of th' invincible Spring;</l>
+          <l>How all the blood of June glutted his heart,</l>
+          <l>And all the glow of huge autumnal storms</l>
+          <l>Stirred on his face, and flickered from his eyes.</l>
+        </lg>
+      </div>
+
+      <div type="letter">
+        <p> I had seen your Song. May the music <lb/>be equally happy. you <emph rend="ul"
+            >are</emph> lucky!</p>
+        <p> you shall have my Locke's "Usurper" if you <lb/>will. Its now at home. </p>
+        <p> I see Swinburne also wrote a number of <lb/>replicas of the olde Ballad! Heigh ho! </p>
+      </div>
+      <!-- Salute can also be used for closing salutations -->
+      <salute rend="ul">Ever yours</salute>
+      <!-- Owen signs with a WEO monogram, here encoded with a signed element -->
+      <signed rend="monogram">WEO</signed>
+    </body>
+  </text>
+</TEI>
