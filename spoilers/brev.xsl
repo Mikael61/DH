@@ -13,6 +13,22 @@
                 <title>Brev 
                     <xsl:value-of select="//brevhuvud"/>
                 </title>
+                <style type="text/css">
+                    body {width : 75%}
+                    .huvud { text-align : right ;
+                    font-style : italic ;
+                    font-size : 0.8em }
+                    .poesi {
+                    border : 1px solid maroon ;
+                    margin-left : 3em
+                    }
+                    .salut {
+                    font-style : italic 
+                    }
+                    .sig {
+                    text-align : right
+                    }
+                </style>
             </head>
             <body>
                 <h1>
@@ -25,11 +41,15 @@
         </html>
     </xsl:template>
     
+    <xsl:template match="brevhuvud">
+        <p class="huvud"><xsl:apply-templates></xsl:apply-templates></p>
+    </xsl:template>
+    
     <xsl:template match="stycke">
         <p><xsl:apply-templates></xsl:apply-templates></p>
     </xsl:template>
     <xsl:template match="poesi">
-        <p><xsl:apply-templates></xsl:apply-templates></p>
+        <p class="poesi"><xsl:apply-templates></xsl:apply-templates></p>
     </xsl:template>
     <xsl:template match="versrad">
         <xsl:apply-templates></xsl:apply-templates><br/>
