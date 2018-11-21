@@ -4,5 +4,5 @@ Rena textfiler, bildfiler mm, vilket utgör underlag bl a för en workshop i Gö
 
 Bildmaterial och TEI-exempel kommer från Oxford Text Archive
 
-# 6 oktober:
+# 6 oktober 2017:
 lade till en fil brev.xsl i spoiler avsedd att illustrera transformationen av brev.xml till xhtml
